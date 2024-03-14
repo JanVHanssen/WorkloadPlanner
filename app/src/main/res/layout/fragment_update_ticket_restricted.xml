@@ -1,0 +1,77 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loginLayout"
+        android:padding="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/info" />
+
+        <EditText
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Info"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintBottom_toTopOf="@+id/finishedCheckBox" />
+
+        <CheckBox
+            android:id="@+id/finishedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finished"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+        <Spinner
+            android:id="@+id/user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="User"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/finishedCheckBox"
+            app:layout_constraintBottom_toTopOf="@+id/updateButton" />
+
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Update"
+            android:background="@drawable/button"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/user" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

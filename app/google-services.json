@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402174758756",
+    "project_id": "workloadplanner-83955",
+    "storage_bucket": "workloadplanner-83955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402174758756:android:6410a15300983203ec7471",
+        "android_client_info": {
+          "package_name": "be.ucll.workloadplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8do4GeIZoUmTA1Y70sh4h45KNUaEHojc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

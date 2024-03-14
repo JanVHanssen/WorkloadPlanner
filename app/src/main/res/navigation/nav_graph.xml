@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/TicketsFragment">
+
+    <fragment
+        android:id="@+id/TicketsFragment"
+        android:name="be.ucll.workloadplanner.TicketsFragment"
+        tools:layout="@layout/fragment_tickets">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddTicketFragment"
+        android:name="be.ucll.workloadplanner.AddTicketFragment"
+        tools:layout="@layout/fragment_add_ticket">
+    </fragment>
+
+    <fragment
+        android:id="@+id/UpdateTicketFragment"
+        android:name="be.ucll.workloadplanner.UpdateTicketFragment"
+        tools:layout="@layout/fragment_update_ticket">
+    </fragment>
+
+    <fragment
+        android:id="@+id/UpdateTicketRestrictedFragment"
+        android:name="be.ucll.workloadplanner.UpdateTicketRestrictedFragment"
+        tools:layout="@layout/fragment_update_ticket_restricted">
+    </fragment>
+
+    <action
+        android:id="@+id/action_any_fragment_to_addTicket"
+        app:destination="@id/AddTicketFragment" />
+
+    <action
+        android:id="@+id/action_addTicket_to_tickets"
+        app:destination="@id/TicketsFragment" />
+
+    <action
+        android:id="@+id/action_tickets_to_updateTicket"
+        app:destination="@id/UpdateTicketFragment" />
+
+    <action
+        android:id="@+id/action_updateTicket_to_tickets"
+        app:destination="@id/TicketsFragment" />
+
+    <action
+        android:id="@+id/action_tickets_to_updateTicketRestricted"
+        app:destination="@id/UpdateTicketRestrictedFragment" />
+
+    <action
+        android:id="@+id/action_updateTicketRestricted_to_tickets"
+        app:destination="@id/TicketsFragment" />
+
+    <action
+        android:id="@+id/action_any_fragment_to_tickets"
+        app:destination="@id/TicketsFragment" />
+
+
+
+</navigation>
